@@ -1,0 +1,5 @@
+imie = input("Podaj imię :")
+imie = imie.capitalize()
+print("Cześć",imie)
+wiek= int(input("Podaj swój wiek :"))
+print(imie,"masz",wiek,"lat. Za rok będziesz miał :",(wiek+1),"lat")
