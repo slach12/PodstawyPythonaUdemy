@@ -1,4 +1,4 @@
-
+import math
 def policzProstokat():
     bokA = int(input("Podaj długość pierwszego boku: "))
     bokB = int(input("Podaj długość drugiego boku: "))
@@ -25,7 +25,7 @@ def policzTrapez():
 
 def policzKolo():
     promien= int(input("Podaj długość promienia: "))
-    pole = promien*promien*3.14
+    pole = promien**2 * math.pi
     print("Pole kola :",pole)
 
     

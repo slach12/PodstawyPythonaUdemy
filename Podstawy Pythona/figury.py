@@ -1,16 +1,17 @@
+import math
 
-def policzProstokat():
-    bokA= int(input("Podaj długość pierwszego boku: "))
-    bokB= int(input("Podaj długość drugiego boku: "))
-    print("Pole prostokąta:",bokA*bokB)
+def pole_kwadratu(a):
+    return a * a
 
-print("1 - prostokąt")
-print("2 - kwadrat")
-print("3 - trójkąt")
-print("4 - trapez")
-print("5 - koło")
-figura = input("Podaj numer figury:")
+def pole_prostokata(a, b):
+    return a * b
 
+def pole_kola(r):
+    return math.pi * r ** 2
 
-if figura=="1":
-    policzProstokat()
+def pole_trojkata(a, h):
+    return 0.5 * a * h
+
+def pole_trapezu(a, b, h):
+    return (a + b) / 2 * h
+    
