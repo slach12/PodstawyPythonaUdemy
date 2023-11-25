@@ -1,6 +1,6 @@
 
 
-#1 Podstawy pytbona
+#1 Podstawy pytona
 '''
 wiek =28
 print(wiek)
