@@ -46,4 +46,15 @@ else:
     userWithTopCompletedTasks = users_with_top_completed_tasks(completedTaskFrequencyByUser)
     print("Wręczamy ciasteczko mistrzunia do użytkowników o id:",userWithTopCompletedTasks)
 
+
+r = requests.get("https://jsonplaceholder.typicode.com/users")
+
+users = r.json()
+#print(users)
+for user in users:
+    if user["id"] in userWithTopCompletedTasks:
+        print("Wręczamy ciasteczko mistrzunia do użytkownika o imieniu :",user["name"])
+        
+    
+
  
