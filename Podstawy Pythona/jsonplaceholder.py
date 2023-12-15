@@ -3,8 +3,25 @@ import json
 
 r = requests.get("https://jsonplaceholder.typicode.com/todos")
 
+from collections import defaultdict
+
+a = defaultdict(int)
+print(a["lalal"])
+a[4] = +1
+print(a)
+
 
 def count_Task_Frequency(tasks):
+    completedTaskFrequencyByUser = defaultdict(int)
+    for entry in tasks:
+        #print(entry)
+        if (entry["completed"] == True):
+            completedTaskFrequencyByUser[entry["userId"]]+=1
+    return completedTaskFrequencyByUser
+
+
+
+def count_Task_Frequency2(tasks):
     completedTaskFrequencyByUser = dict()
     for entry in tasks:
         #print(entry)
