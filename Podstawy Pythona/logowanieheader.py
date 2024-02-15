@@ -36,3 +36,6 @@ except json.decoder.JSONDecodeError:
     print("Niepoprawny format")
 else:
      pprint(content)
+
+
+print(content)
